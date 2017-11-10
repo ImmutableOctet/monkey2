@@ -98,7 +98,7 @@ Class AssimpLoader
 		
 		Local model:=LoadNode( _scene.mRootNode,Null,True )
 		
-		LoadAnimator( model )
+		model.Animator = LoadAnimator( model )
 		
 		Return model
 	End
